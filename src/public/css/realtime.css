@@ -1,0 +1,10 @@
+.title-color{
+    color:blue;
+    font-size: 50px;
+    font-style: italic;
+}
+
+.product-list{
+    list-style-type: none;
+
+}

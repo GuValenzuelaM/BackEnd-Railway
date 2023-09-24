@@ -1,0 +1,26 @@
+<div>
+    <a href="/products?page=1">Productos</a>
+    <a href="/profile">Perfil</a>
+    <hr>
+    
+    <h1>Vista administrador</h1>
+    <a href="http://localhost:8080/api/users/inactiveUsers">Usuarios Inactivos</a>
+    <br>
+    <a href="http://localhost:8080/api/users/updateUsers">Actualización de Usuarios</a>
+    <br>
+    <a href="http://localhost:8080/totalProducts">Administrador de Productos</a>
+    
+    
+</div>
+<div>
+    {{#each totalUsers}}
+        <hr>
+        <ul>
+                    <a>Nombre Completo: {{this.nombre_apellido}}</a>
+                    <br>
+                    <a>Role: {{this.role}}</a>
+                    <br>
+                    <a>Correo: {{this.email}}</a>
+        </ul>
+    {{/each}}
+</div>

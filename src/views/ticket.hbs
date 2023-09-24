@@ -1,0 +1,25 @@
+<div>
+    <a href="/products?page=1">Productos</a></a>
+    <a href="/profile">Perfil</a>
+</div>
+<br>
+
+<h1>Finaliza tu compra</h1> 
+
+<br>
+    <button onclick="purchaseProcess(`{{this.id}}`)">Comprar</button>
+    <div>
+        <hr>
+            <h2>TicketId: {{this._id}}</h2>
+        <div>
+            <ul>
+                <p>Code: {{this.code}}</p>
+                <p>Datetime: {{this.purchase_datetime}}</p>
+                <p>Amount: ${{this.amount}}</p>
+                <p>Purchaser: {{this.purchaser}}</p>
+            </ul> 
+        </div>
+        <hr>      
+            
+    </div>
+<script src="js/tickets.js"></script>

@@ -1,0 +1,21 @@
+<div>
+    <a href="/products?page=1">Productos</a></a>
+    <a href="/profile">Perfil</a>
+    <a href="/api/carts/{{user.cart}}">Carrito</a>
+
+</div>
+<br/>
+<h1>Pagina perfil</h1>
+<p>¡Bienvenido {{user.first_name}}!</p>
+<hr>
+<p>Nombre: {{user.first_name}}</p>
+<p>Apellido: {{user.last_name}}</p>
+<p>Correo: {{user.email}}</p>
+<p>Edad: {{user.age}}</p>
+<p>Tipo Perfil: {{user.role}}</p>
+<p>Cart: {{user.cart}}</p>
+<hr>
+
+<a href="/api/sessions/logout">Cerrar sesion</a>
+<hr>    
+<a href="http://localhost:8080/api/users/updateUsers"> Vista Administrador</a>

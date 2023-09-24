@@ -1,0 +1,18 @@
+<div>
+    <a href="/">Inicio</a>
+</div>
+
+<h1>Pagina login</h1>
+<p>{{messege}}</p>
+<hr>
+<form method="post" action="/api/sessions/login">
+    <input type="email" placeholder="Correo" name="email"/>
+    <br/><br/>
+    <input type="password" placeholder="Contraseña" name="password"/>
+    <br/><br/>
+    <button type="submit">Iniciar sesion</button>
+</form>
+<a href="/forgot-password">Restaurar Contraseña</a>
+<hr>
+<a href="/signup">Registrate</a>
+<hr>
